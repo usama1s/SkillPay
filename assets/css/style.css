@@ -1,0 +1,240 @@
+body {
+  font-family: "Poppins", sans-serif;
+  min-width: 430px;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+section {
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  height: 64px;
+}
+nav a {
+  font-size: 11px;
+  color: #004052;
+}
+
+.title {
+  font-size: 29px;
+  font-weight: 700;
+  color: #004052;
+}
+.text {
+  font-size: 15px;
+  color: #004052;
+  font-weight: 300;
+}
+.text-sm {
+  font-size: 10px;
+  color: #FFFFFF;
+  font-weight: 300;
+}
+.violet-text{
+  color: #C294FF;
+}
+.subtitle {
+  font-size: 20px;
+  font-weight: 300;
+  color: #004052;
+}
+.subtitle-sm{
+  font-size: 17px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+.orange-btn,
+.violet-btn,
+.grey-btn,
+.pink-btn {
+  font-size: 17px;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 1px 3px #2c28281c;
+  border: 2px solid black;
+  min-width: 210px;
+  padding: 13px 15px;
+  transition: background 0.4s;
+}
+.grey-btn {
+  background: #e2e0dd;
+  border-color: #e2e0dd;
+}
+.grey-btn:hover {
+  background: transparent;
+  color: #e2e0dd;
+}
+.pink-btn {
+  background: #fe4773;
+  border-color: #fe4773;
+}
+.pink-btn:hover {
+  background: transparent;
+  color: #fe4773;
+}
+.orange-btn {
+  background: #fe6e4b;
+  border-color: #fe6e4b;
+}
+.orange-btn:hover {
+  background: transparent;
+  color: #fe6e4b;
+}
+.violet-btn {
+  background: #c294ff;
+  border-color: #c294ff;
+}
+.violet-btn:hover {
+  background: transparent;
+  color: #c294ff;
+}
+
+.phonebox input {
+  border: none;
+  width: 230px;
+  letter-spacing: 2px;
+  padding-left: 80px !important;
+}
+.phonebox input:focus-visible {
+  outline: none;
+}
+
+.progress-bar {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 40px;
+  background-color: #e2e0dd;
+}
+.progress {
+  border-radius: 40px;
+  background-color: #1445e8;
+}
+.bg-grey{
+  background: #F7F7F7;
+}
+.bg-blue{
+  background: #183F50;
+}
+@media screen and (min-width: 676px) {
+  .subtitle {
+    font-style: 28px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .title {
+    font-size: 36px;
+  }
+  .text {
+    font-size: 18px;
+  }
+  .subtitle-sm{
+    font-style: 23px;
+  }
+}
+
+.hero-section .sec-box::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0%;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/images/woman.png);
+  background-repeat: no-repeat;
+  max-width: 420px;
+  background-size: contain;
+  transform: translate(-30%, 25%);
+  background-position: right;
+  z-index: -1;
+}
+.hero-section .sec-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0%;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/images/man.png);
+  background-repeat: no-repeat;
+  max-width: 420px;
+  background-size: contain;
+  transform: translate(20%, 31%);
+  background-position: right;
+  z-index: -1;
+}
+
+/* job hire page */
+.nurses-hero-sec img {
+  width: 350px;
+}
+.nurses-hero-sec .img {
+  width: fit-content;
+}
+.nurses-hero-sec .img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0%;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/images/job-hire-bg1.png);
+  background-repeat: no-repeat;
+  max-width: 300px;
+  background-size: contain;
+  transform: translate(28%, 29%);
+  background-position: right;
+  z-index: -1;
+}
+.nurses-hero-sec .img::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0%;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/images/job-hire-bg2.png);
+  background-repeat: no-repeat;
+  max-width: 280px;
+  background-size: contain;
+  transform: translate(-62%, 0%);
+  background-position: right;
+  z-index: -1;
+}
+
+@media screen and (min-width: 767px) {
+  .nurses-hero-sec img {
+    width: 700px;
+  }
+  .nurses-hero-sec .img::before {
+    max-width: 650px;
+
+    transform: translate(-67%, -9%);
+  }
+  .nurses-hero-sec .img::after {
+    max-width: 700px;
+
+    transform: translate(35%, 4%);
+  }
+}
+
+
+
+
+/* icon boxes */
+.icon-box-sec{
+  border-radius: 20px 20px 0px 0px;
+}
+.icon-box {
+  max-width: 230px;
+}
+.icon-box img{
+  height: 214px;
+}
+
