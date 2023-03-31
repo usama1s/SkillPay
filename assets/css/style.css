@@ -17,7 +17,16 @@ nav a {
   font-size: 11px;
   color: #004052;
 }
-
+.title-lg{
+  font-size: 41px;
+  font-weight: 700;
+  color: #004052;
+}
+.title-md{
+  font-size: 33px;
+  font-weight: 700;
+  color: #004052;
+}
 .title {
   font-size: 29px;
   font-weight: 700;
@@ -28,14 +37,17 @@ nav a {
   color: #004052;
   font-weight: 300;
 }
+.text-md{
+  font-size: 12px;
+  color: #004052;
+  font-weight: 300;
+}
 .text-sm {
   font-size: 10px;
   color: #FFFFFF;
   font-weight: 300;
 }
-.violet-text{
-  color: #C294FF;
-}
+
 .subtitle {
   font-size: 20px;
   font-weight: 300;
@@ -45,6 +57,24 @@ nav a {
   font-size: 17px;
   font-weight: 600;
   color: #FFFFFF;
+}
+.violet-text{
+  color: #C294FF;
+}
+.pink-text{
+  color: #FE4773;
+}
+.light-pink-text{
+  color: #EA5675;
+}
+.text-blue{
+  color: #1445E8;
+}
+.text-yellow{
+  color: #F5C248;
+}
+.text-darkblue{
+  color: #004052;
 }
 .orange-btn,
 .violet-btn,
@@ -91,7 +121,9 @@ nav a {
   background: transparent;
   color: #c294ff;
 }
-
+.brown-bg{
+  background-color: #690030;
+}
 .phonebox input {
   border: none;
   width: 230px;
@@ -117,6 +149,9 @@ nav a {
 }
 .bg-blue{
   background: #183F50;
+}
+.bg-grey{
+  background: #F7F7F7;
 }
 @media screen and (min-width: 676px) {
   .subtitle {
@@ -222,6 +257,9 @@ nav a {
 
     transform: translate(35%, 4%);
   }
+  .job-box{
+    max-width: 100% !important;
+   }
 }
 
 
@@ -232,9 +270,40 @@ nav a {
   border-radius: 20px 20px 0px 0px;
 }
 .icon-box {
-  max-width: 230px;
+  max-width: 320px;
 }
 .icon-box img{
   height: 214px;
 }
+.process-sec .icon-box img{
+  height: 150px;
+}
+ /* job boxes  */
+ .job-box{
+  max-width: 230px;
+ }
+ .job-box{
+  border-top: 1px solid #172b4d3b;
+ 
+ }
+ .job-box:last-child{
+  border-bottom: 1px solid #172b4d3b;
+ }
 
+ /* masterclass video section  */
+.masterclass-video-sec{
+  overflow: visible;
+}
+
+
+ /* footer  */
+ footer .footer-top{
+  border-bottom: 1px solid #fe47724b;
+ }
+ footer .footer-main ul {
+  list-style: none;
+  padding-left: 0;
+ }
+ footer .footer-main ul li {
+  font-size: 9px;
+ }
