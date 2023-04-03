@@ -203,7 +203,7 @@ nav a {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/assets/images/woman.png);
+  background-image: url(../../assets/images/woman.png);
   background-repeat: no-repeat;
   max-width: 420px;
   background-size: contain;
@@ -219,7 +219,7 @@ nav a {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/assets/images/man.png);
+  background-image: url(../../assets/images/man.png);
   background-repeat: no-repeat;
   max-width: 420px;
   background-size: contain;
@@ -243,7 +243,7 @@ nav a {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/assets/images/job-hire-bg1.png);
+  background-image: url(../../assets/images/job-hire-bg1.png);
   background-repeat: no-repeat;
   max-width: 300px;
   background-size: contain;
@@ -259,7 +259,7 @@ nav a {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/assets/images/job-hire-bg2.png);
+  background-image: url(../../assets/images/job-hire-bg2.png);
   background-repeat: no-repeat;
   max-width: 280px;
   background-size: contain;
@@ -426,7 +426,28 @@ border-radius: 6px;
   max-width: 225px;
   background: #EDEDED;
 }
-
+.profile-edit .edit{
+right: 2px;
+top: 6px;
+cursor: pointer;
+}
+.sidebar-nav{
+  list-style: none;
+  width: 100%;
+}
+.sidebar-nav li{
+  width: 100%;
+  border-radius: 5px;
+  font-size: 9px;
+  color: #172B4D;
+  cursor: pointer;
+}
+.sidebar-nav li:hover{
+  background: #E2E2E2;
+}
+.sidebar-nav li.active{
+  background: #E2E2E2;
+}
 
 /* footer  */
 footer .footer-top {
