@@ -153,12 +153,16 @@ nav a {
   border: none;
   width: 230px;
   letter-spacing: 2px;
-  padding-left: 80px !important;
 }
 .phonebox input:focus-visible {
   outline: none;
 }
-
+.iti__arrow {
+  margin-left: 3px !important;
+}
+.iti--separate-dial-code .iti__selected-dial-code {
+  margin-left: 11px !important;
+}
 .progress-bar {
   max-width: 400px;
   width: 100%;
@@ -425,6 +429,12 @@ border-radius: 6px;
 .sidebar{
   max-width: 225px;
   background: #EDEDED;
+  transition: .2s ease-in;
+}
+.sidebarhide{
+  max-width: 0;
+    overflow: hidden;
+    padding: 0 !important;
 }
 .profile-edit .edit{
 right: 2px;
@@ -448,6 +458,91 @@ cursor: pointer;
 .sidebar-nav li.active{
   background: #E2E2E2;
 }
+/* sidebar content side  */
+.content-side-nav .searchbox input{
+border-radius: 25px;
+border: 1px solid #E2E0DD;
+padding:9px 12px 9px 30px;
+font-size: 9px;
+color: #172B4D;
+}
+.content-side-nav .searchbox img{
+  left: 11px;
+  top:50%;
+  transform: translateY(-50%);
+}
+.jobbox-div{
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  gap: 28px;
+}
+.jobbox{
+  max-width: 360px;
+  width: 100%;
+  border: .5px solid #E2E0DD;
+  border-radius: 10px;
+}
+
+.job-input {
+  border: 1px solid #E2E0DD;
+  border-radius: 5px;
+}
+
+
+.radio-wrapper {
+  margin-bottom: 12px;
+  width: 50%;
+}
+
+.radio-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.radio-button:hover {
+  transform: translateY(-2px);
+}
+
+.radio-button input[type="radio"] {
+  display: none;
+}
+
+.radio-checkmark {
+  display: inline-block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+  border: .5px solid #E2E0DD;
+  border-radius: 50%;
+}
+
+.radio-checkmark:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #172B4D;
+  transition: all 0.2s ease-in-out;
+}
+
+.radio-button input[type="radio"]:checked ~ .radio-checkmark:before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.radio-label {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+
 
 /* footer  */
 footer .footer-top {

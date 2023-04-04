@@ -21,10 +21,10 @@
 </head>
 <body>
     <div class="d-flex">
-     <div class="sidebar py-4 px-3 w-100 vh-100">
+     <div class="sidebar py-4 px-3 w-100 vh-100" id="sidebar">
 <div class="d-flex justify-content-between ">
 <a href=""><img src="assets/images/blu-logo-2.png" alt=""></a>
-<a href=""><img src="assets/images/nav.png" alt=""></a>
+<a id="toggle"><img src="assets/images/nav.png" alt=""></a>
 </div>
 <div class="d-flex flex-column align-items-center justify-content-center mt-5">
   <div class="profile-edit position-relative">
@@ -46,9 +46,300 @@
   </ul>
 </div>
 </div>
-<div class="content-side vh-100 py-4 px-3">
-    
-</div>   
+<div class="content-side vh-100 w-100 py-4 px-3 position-relative">
+<span class="position-absolute sidebarclose" style="top:0; display: none;" id="sidebarclose">></span>
+    <div class="d-flex justify-content-between content-side-nav">
+      <div class="searchbox position-relative">
+<input class="" type="text" placeholder="Search">
+<img class="position-absolute" src="assets/images/search.png" alt="">
+      </div>
+      <div class="d-flex justify-content-evenly align-items-center gap-3">
+        <a href=""><img src="assets/images/bell.png" alt=""></a>
+        <a href=""><img src="assets/images/help-circle.png" alt=""></a>
+        <a href="" class="d-flex gap-2 align-items-center"><img src="assets/images/prof.png" alt=""> <span style="font-size: 9px; color: #1C1C1C;">Arya Stark</span></a>
+          
+      <div>
+
+      </div>
+    </div>
+  
+</div> 
+<div class="mt-5">
+<div class="jobbox-div">
+  <div class="jobbox pt-5 pb-4 px-3">
+<h6 class="text-md">
+  Job Details
+</h6>
+<div>
+  <div class="d-flex justify-content-between gap-2 align-items-center mt-3">
+     <div class="radio-wrapper">
+    <label class="radio-button">
+      <input type="radio" name="radio-group" id="option1">
+      <span class="radio-checkmark"></span>
+      <span class="radio-label">Registred Nurse (
+        RN)</span>
+    </label>
+  </div>
+     <div class="radio-wrapper">
+    <label class="radio-button">
+      <input type="radio" name="radio-group" id="option2">
+      <span class="radio-checkmark"></span>
+      <span class="radio-label">Licensed Practical 
+        Nurse</span>
+    </label>
+  </div>
+  </div>
+  <div class="d-flex justify-content-between gap-2 align-items-center">
+     <div class="radio-wrapper">
+    <label class="radio-button">
+      <input type="radio" name="radio-group" id="option1">
+      <span class="radio-checkmark"></span>
+      <span class="radio-label">Certified Nurse</span>
+    </label>
+  </div>
+     <div class="radio-wrapper">
+    <label class="radio-button">
+      <input type="radio" name="radio-group" id="option2">
+      <span class="radio-checkmark"></span>
+      <span class="radio-label">Emergency</span>
+    </label>
+  </div>
+  </div>
+  <div class="d-flex justify-content-between gap-2 align-items-center">
+     <div class="radio-wrapper">
+    <label class="radio-button">
+      <input type="radio" name="radio-group" id="option1">
+      <span class="radio-checkmark"></span>
+      <span class="radio-label">Registred Nurse 
+        (RN)</span>
+    </label>
+  </div>
+     <div class="radio-wrapper">
+    <label class="radio-button">
+      <input type="radio" name="radio-group" id="option2">
+      <span class="radio-checkmark"></span>
+      <span class="radio-label">Licensed Practical 
+        Nurse</span>
+    </label>
+  </div>
+  </div>
+  <div class="d-flex justify-content-between gap-2 align-items-center">
+     <div class="radio-wrapper">
+    <label class="radio-button">
+      <input type="radio" name="radio-group" id="option1">
+      <span class="radio-checkmark"></span>
+      <span class="radio-label">Oncology Nurse</span>
+    </label>
+  </div>
+     <div class="radio-wrapper">
+    <label class="radio-button">
+      <input type="radio" name="radio-group" id="option2">
+      <span class="radio-checkmark"></span>
+      <span class="radio-label">Travel Nurse</span>
+    </label>
+  </div>
+  </div>
+  <div class="d-flex justify-content-between gap-2 align-items-center">
+     <div class="radio-wrapper">
+    <label class="radio-button">
+      <input type="radio" name="radio-group" id="option1">
+      <span class="radio-checkmark"></span>
+      <span class="radio-label">Registred Nurse 
+        (RN)</span>
+    </label>
+  </div>
+     <div class="radio-wrapper">
+    <label class="radio-button">
+      <input type="radio" name="radio-group" id="option2">
+      <span class="radio-checkmark"></span>
+      <span class="radio-label">Licensed Practical 
+        Nurse</span>
+    </label>
+  </div>
+  </div>
+  <div class="d-flex justify-content-between gap-2 align-items-center">
+     <div class="radio-wrapper">
+    <label class="radio-button">
+      <input type="radio" name="radio-group" id="option1">
+      <span class="radio-checkmark"></span>
+      <span class="radio-label">Oncology Nurse</span>
+    </label>
+  </div>
+     <div class="radio-wrapper">
+    <label class="radio-button">
+      <input type="radio" name="radio-group" id="option2">
+      <span class="radio-checkmark"></span>
+      <span class="radio-label">Travel Nurse</span>
+    </label>
+  </div>
+  </div>
+  <h6 class="text-md pt-2">
+    Job Type
+  </h6>
+  <div class="d-flex justify-content-between gap-2 align-items-center">
+    <div class="radio-wrapper">
+   <label class="radio-button">
+     <input type="radio" name="radio-group" id="option1">
+     <span class="radio-checkmark"></span>
+     <span class="radio-label">Oncology Nurse</span>
+   </label>
+ </div>
+    <div class="radio-wrapper">
+   <label class="radio-button">
+     <input type="radio" name="radio-group" id="option2">
+     <span class="radio-checkmark"></span>
+     <span class="radio-label">Travel Nurse</span>
+   </label>
+ </div>
+ </div>
+ <h6 class="text-md pt-2">
+  Other Details
+</h6>
+<div class="d-flex mb-3">
+  <input type="text" placeholder="Location Details*" class="job-input text-sm px-3 py-2 w-100" style="color:#172B4D;">
+</div>
+<div class="d-flex">
+  <input type="text" placeholder="Number of Openings*" class="job-input text-sm px-3 py-2 w-100" style="color:#172B4D;">
+</div>
+</div>
+  </div>
+  <div class="jobbox pt-5 pb-4 px-3">
+    <h6 class="text-md">
+      Job Start Date
+    </h6>
+    <div>
+      <div class="d-flex justify-content-between gap-2 align-items-center mt-3">
+         <div class="radio-wrapper">
+        <label class="radio-button">
+          <input type="radio" name="radio-group" id="option1">
+          <span class="radio-checkmark"></span>
+          <span class="radio-label">Oncology Nurse</span>
+        </label>
+      </div>
+         <div class="radio-wrapper">
+        <label class="radio-button">
+          <input type="radio" name="radio-group" id="option2">
+          <span class="radio-checkmark"></span>
+          <span class="radio-label">Travel Nurse</span>
+        </label>
+      </div>
+      </div>
+      <div class="d-flex justify-content-between gap-2 align-items-center">
+         <div class="radio-wrapper">
+        <label class="radio-button">
+          <input type="radio" name="radio-group" id="option1">
+          <span class="radio-checkmark"></span>
+          <span class="radio-label">Certified Nurse</span>
+        </label>
+      </div>
+         <div class="radio-wrapper">
+        <label class="radio-button">
+          <input type="radio" name="radio-group" id="option2">
+          <span class="radio-checkmark"></span>
+          <span class="radio-label">Emergency</span>
+        </label>
+      </div>
+      </div>
+      <div class="d-flex justify-content-between gap-2 align-items-center">
+         <div class="radio-wrapper">
+        <label class="radio-button">
+          <input type="radio" name="radio-group" id="option1">
+          <span class="radio-checkmark"></span>
+          <span class="radio-label">Registred Nurse 
+            (RN)</span>
+        </label>
+      </div>
+         <div class="radio-wrapper">
+        <label class="radio-button">
+          <input type="radio" name="radio-group" id="option2">
+          <span class="radio-checkmark"></span>
+          <span class="radio-label">Licensed Practical 
+            Nurse</span>
+        </label>
+      </div>
+      </div>
+      <div class="d-flex justify-content-between gap-2 align-items-center">
+         <div class="radio-wrapper">
+        <label class="radio-button">
+          <input type="radio" name="radio-group" id="option1">
+          <span class="radio-checkmark"></span>
+          <span class="radio-label">Oncology Nurse</span>
+        </label>
+      </div>
+         <div class="radio-wrapper">
+        <label class="radio-button">
+          <input type="radio" name="radio-group" id="option2">
+          <span class="radio-checkmark"></span>
+          <span class="radio-label">Travel Nurse</span>
+        </label>
+      </div>
+      </div>
+      <div class="d-flex justify-content-between gap-2 align-items-center">
+         <div class="radio-wrapper">
+        <label class="radio-button">
+          <input type="radio" name="radio-group" id="option1">
+          <span class="radio-checkmark"></span>
+          <span class="radio-label">Registred Nurse 
+            (RN)</span>
+        </label>
+      </div>
+         <div class="radio-wrapper">
+        <label class="radio-button">
+          <input type="radio" name="radio-group" id="option2">
+          <span class="radio-checkmark"></span>
+          <span class="radio-label">Licensed Practical 
+            Nurse</span>
+        </label>
+      </div>
+      </div>
+      <div class="d-flex justify-content-between gap-2 align-items-center">
+         <div class="radio-wrapper">
+        <label class="radio-button">
+          <input type="radio" name="radio-group" id="option1">
+          <span class="radio-checkmark"></span>
+          <span class="radio-label">Oncology Nurse</span>
+        </label>
+      </div>
+         <div class="radio-wrapper">
+        <label class="radio-button">
+          <input type="radio" name="radio-group" id="option2">
+          <span class="radio-checkmark"></span>
+          <span class="radio-label">Travel Nurse</span>
+        </label>
+      </div>
+      </div>
+      <h6 class="text-md pt-2">
+        Job Type
+      </h6>
+      <div class="d-flex justify-content-between gap-2 align-items-center">
+        <div class="radio-wrapper">
+       <label class="radio-button">
+         <input type="radio" name="radio-group" id="option1">
+         <span class="radio-checkmark"></span>
+         <span class="radio-label">Oncology Nurse</span>
+       </label>
+     </div>
+        <div class="radio-wrapper">
+       <label class="radio-button">
+         <input type="radio" name="radio-group" id="option2">
+         <span class="radio-checkmark"></span>
+         <span class="radio-label">Travel Nurse</span>
+       </label>
+     </div>
+     </div>
+     <h6 class="text-md pt-2">
+      Other Details
+    </h6>
+    <div class="d-flex mb-3">
+      <input type="text" placeholder="Location Details*" class="job-input text-sm px-3 py-2 w-100" style="color:#172B4D;">
+    </div>
+    <div class="d-flex">
+      <input type="text" placeholder="Number of Openings*" class="job-input text-sm px-3 py-2 w-100" style="color:#172B4D;">
+    </div>
+    </div>
+      </div>
+</div>
+</div>  
     </div>
 
 </body>
