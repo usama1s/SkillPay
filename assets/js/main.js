@@ -81,6 +81,7 @@ window.onload = function () {
 const toggle = document.getElementById("toggle");
 const sidebar = document.getElementById("sidebar");
 const closebtn = document.getElementById("sidebarclose");
+const contentside = document.getElementById("content-side");
 closebtn.addEventListener("click", togglesidebar);
 toggle.addEventListener("click", togglesidebar);
 
@@ -91,4 +92,5 @@ function togglesidebar() {
     closebtn.style.display="block"; 
   }
 sidebar.classList.toggle("sidebarhide");
+contentside.classList.toggle("content-side")
 }

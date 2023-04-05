@@ -427,14 +427,17 @@ border-radius: 6px;
 
 /* sidebar  */
 .sidebar{
-  max-width: 225px;
+  min-width: 225px;
   background: #EDEDED;
   transition: .2s ease-in;
+  max-width: 225px;
+  float: left;
 }
 .sidebarhide{
-  max-width: 0;
+ min-width: 0;
     overflow: hidden;
     padding: 0 !important;
+    max-width: 0;
 }
 .profile-edit .edit{
 right: 2px;
@@ -459,6 +462,10 @@ cursor: pointer;
   background: #E2E2E2;
 }
 /* sidebar content side  */
+.content-side{
+  width: calc(100% - 225px);
+    float: left;
+}
 .content-side-nav .searchbox input{
 border-radius: 25px;
 border: 1px solid #E2E0DD;
@@ -476,6 +483,8 @@ color: #172B4D;
   overflow-x: auto;
   width: 100%;
   gap: 28px;
+  min-width: 1148px;
+  white-space: nowrap;
 }
 .jobbox{
   max-width: 360px;
