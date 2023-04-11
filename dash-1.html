@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SkillPlay</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="d-flex">
+    <div class="sidebar py-4 px-3 w-100 min-vh-100" id="sidebar">
+      <div class="d-flex justify-content-between ">
+        <a href=""><img src="assets/images/blu-logo-2.png" alt=""></a>
+        <a id="toggle"><img src="assets/images/nav.png" alt=""></a>
+      </div>
+      <div class="d-flex flex-column align-items-center justify-content-center mt-5">
+        <div class="profile-edit position-relative">
+          <img src="assets/images/profilepic.png" alt="">
+          <img src="assets/images/edit.png" class="edit position-absolute" alt="">
+        </div>
+        <div class="d-flex flex-column mt-3">
+          <h3 class="text-lg">
+            Stark Inc
+          </h3>
+          <p class="text-sm" style="color:#172B4D;">New York, USA</p>
+        </div>
+        <ul class="sidebar-nav mt-4 text-align-left p-0 me-auto">
+          <li class="d-flex align-items-center gap-2 text-blue p-3 mt-2"><img src="assets/images/home.png" alt="">
+            Dashboard</li>
+          <li class="d-flex align-items-center gap-2 p-3 active mt-2"><img src="assets/images/briefcase.png" alt="">
+            Post Job</li>
+          <li class="d-flex align-items-center gap-2 p-3 mt-2"><img src="assets/images/package.png" alt=""> Previous
+            Listing</li>
+          <li class="d-flex align-items-center gap-2 p-3 mt-2"><img src="assets/images/file-text.png" alt=""> Matching
+            Profiles</li>
+          <li class="d-flex align-items-center gap-2 p-3 mt-2"><img src="assets/images/log-out.png" alt="">Logout</li>
+        </ul>
+      </div>
+    </div>
+    <div class="content-side min-vh-100 py-4 px-3 position-relative" id="content-side">
+      <div class="d-flex justify-content-between content-side-nav">
+        <div class="searchbox position-relative">
+          <input class="" type="text" placeholder="Search">
+          <img class="position-absolute" src="assets/images/search.png" alt="">
+        </div>
+        <div class="d-flex justify-content-evenly align-items-center gap-3">
+          <a href=""><img src="assets/images/bell.png" alt=""></a>
+          <a href=""><img src="assets/images/help-circle.png" alt=""></a>
+          <a href="" class="d-flex gap-2 align-items-center"><img src="assets/images/prof.png" alt=""> <span
+              style="font-size: 9px; color: #1C1C1C;">Arya Stark</span></a>
+              <a id="sidebarclose" class="sidebarclose" style=" display: none;">
+                <img src="assets/images/nav.png" alt="">
+              </a>
+        </div>
+
+      </div>
+
+      <div class="second-nav d-flex mt-5 mb-3 py-2 px-4 justify-content-between align-items-md-center align-items-md-start flex-md-row flex-column py-md-4 py-5 gap-md-0 gap-5">
+        <div class="d-flex align-items-center gap-4">
+          <img src="assets/images/aster.png" alt="">
+          <span class="text-md" style="font-size: 13px;">Aster Hospitals</span>
+        </div>
+        <div class="d-flex justify-content-between gap-3 gap-md-5">
+          <div class="d-flex flex-column gap-1">
+            <div class="d-flex align-items-center gap-1">
+              <span class="d-flex"> <img src="assets/images/case.png" alt=""></span> <span
+                style="font-size: 15px;color: #172B4D;">32</span>
+            </div>
+            <span style="font-size: 8px; color:#FE6E4B;">
+              Job Aspirants
+            </span>
+          </div>
+          <div class="d-flex flex-column gap-1">
+            <div class="d-flex align-items-center gap-1">
+              <span class="d-flex"> <img src="assets/images/video.png" alt=""></span> <span
+                style="font-size: 15px;color: #172B4D;">1 Hr</span>
+            </div>
+            <span style="font-size: 8px; color: #1445E8;">
+              Video watched
+            </span>
+          </div>
+          <div class="d-flex flex-column gap-1">
+            <div class="d-flex align-items-center gap-1">
+              <span class="d-flex"> <img src="assets/images/hexa.png" alt=""></span> <span
+                style="font-size: 15px; color: #172B4D;">245/450</span>
+            </div>
+            <span style="font-size: 8px; color: #FE4773;">
+              Quiz win Out of played
+            </span>
+          </div>
+          <div class="d-flex flex-column gap-1">
+            <div class="d-flex align-items-center gap-1">
+              <span class="d-flex"> <img src="assets/images/filee.png" alt=""></span> <span
+                style="font-size: 15px;color: #172B4D;">5</span>
+            </div>
+            <span style="font-size: 8px; color: #0BCDAB;">
+              Total Assignments
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5" style="overflow: auto; width: 100%;">
+        <span class="text-lg" style="color: #1445E8;">Job Posts</span>
+
+      </div>
+      <div class="table-box mt-3 px-4 py-5">
+        <table class="w-100">
+          <thead>
+            <tr>
+              <th>Select All</th>
+              <th>Profile</th>
+              <th>Category</th>
+              <th>Status</th>
+              <th>Post Date</th>
+              <th>Applications</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>Mid wifery</td>
+              <td>Full time</td>
+              <td>Open</td>
+              <td>10/02/2023</td>
+              <td>56</td>
+              <td>Select</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>Mid wifery</td>
+              <td>Full time</td>
+              <td>Open</td>
+              <td>10/02/2023</td>
+              <td>56</td>
+              <td>Select</td>
+            </tr>
+            <tr style="border: none;">
+              <td><input type="checkbox"></td>
+              <td>Mid wifery</td>
+              <td>Full time</td>
+              <td>Open</td>
+              <td>10/02/2023</td>
+              <td>56</td>
+              <td>Select</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="mt-5" style="overflow: auto; width: 100%;">
+        <span class="text-lg" style="color: #FE6E4B;">Matching Profiles</span>
+        <div class="jobbox-div pb-3 mt-4 flex-column flex-md-row align-items-center">
+          <div class="jobbox pt-4 pb-4 px-4">
+            <div class="job-profile d-flex align-items-center gap-3">
+              <div><img src="assets/images/pp.png" alt=""></div>
+              <div class="d-flex flex-column">
+                <p class="text-md m-0" style="color:#172B4D;">Joana Rose</p>
+                <span class="text-sm " style="color:#172B4D;">
+                  Dubai, UAE
+                </span>
+              </div>
+
+            </div>
+            <div class="d-flex justify-content-between mt-3 mb-4">
+              <div class="d-flex flex-column gap-1">
+                <div class="d-flex align-items-center gap-1">
+                  <span class="d-flex"> <img src="assets/images/video.png" alt=""></span> <span
+                    style="font-size: 15px;color: #172B4D;">1 Hr</span>
+                </div>
+                <span style="font-size: 8px; color: #1445E8;">
+                  Video watched
+                </span>
+              </div>
+              <div class="d-flex flex-column gap-1">
+                <div class="d-flex align-items-center gap-1">
+                  <span class="d-flex"> <img src="assets/images/hexa.png" alt=""></span> <span
+                    style="font-size: 15px; color: #172B4D;">245/450</span>
+                </div>
+                <span style="font-size: 8px; color: #FE4773;">
+                  Quiz win Out of played
+                </span>
+              </div>
+              <div class="d-flex flex-column gap-1">
+                <div class="d-flex align-items-center gap-1">
+                  <span class="d-flex"> <img src="assets/images/filee.png" alt=""></span> <span
+                    style="font-size: 15px;color: #172B4D;">5</span>
+                </div>
+                <span style="font-size: 8px; color: #0BCDAB;">
+                  Total Assignments
+                </span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between mb-3">
+              <span class="text-sm text-dblue w-50">Experience: </span>
+              <span class="text-sm text-dblue w-50">Market research intern at Eatery
+                March 22 - June 22 (4 Months)
+                <br>
+                <br>
+                Market research intern at Eatery
+                March 22 - June 22 (4 Months)</span>
+            </div>
+            <div class="d-flex justify-content-between mb-3">
+              <span class="text-sm text-dblue w-50">Education: </span>
+              <span class="text-sm text-dblue w-50">BBA Accounting (2020-2023)
+                University of West London</span>
+            </div>
+            <div class="d-flex justify-content-between mb-5">
+              <span class="text-sm text-dblue w-50">Skill assessment:</span>
+              <span class="text-sm text-dblue w-50">English 4/10, MS Word 4/10, <br>
+                Spoken Arabic 7/10</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <button class="jobboxbtn" style="background: #FE4773;">Not interested</button>
+              <button class="jobboxbtn" style="background: #70F05B;">Action</button>
+            </div>
+          </div>
+          <div class="jobbox pt-4 pb-4 px-4">
+            <div class="job-profile d-flex align-items-center gap-3">
+              <div><img src="assets/images/pp.png" alt=""></div>
+              <div class="d-flex flex-column">
+                <p class="text-md m-0" style="color:#172B4D;">Joana Rose</p>
+                <span class="text-sm " style="color:#172B4D;">
+                  Dubai, UAE
+                </span>
+              </div>
+
+            </div>
+            <div class="d-flex justify-content-between mt-3 mb-4">
+              <div class="d-flex flex-column gap-1">
+                <div class="d-flex align-items-center gap-1">
+                  <span class="d-flex"> <img src="assets/images/video.png" alt=""></span> <span
+                    style="font-size: 15px;color: #172B4D;">1 Hr</span>
+                </div>
+                <span style="font-size: 8px; color: #1445E8;">
+                  Video watched
+                </span>
+              </div>
+              <div class="d-flex flex-column gap-1">
+                <div class="d-flex align-items-center gap-1">
+                  <span class="d-flex"> <img src="assets/images/hexa.png" alt=""></span> <span
+                    style="font-size: 15px; color: #172B4D;">245/450</span>
+                </div>
+                <span style="font-size: 8px; color: #FE4773;">
+                  Quiz win Out of played
+                </span>
+              </div>
+              <div class="d-flex flex-column gap-1">
+                <div class="d-flex align-items-center gap-1">
+                  <span class="d-flex"> <img src="assets/images/filee.png" alt=""></span> <span
+                    style="font-size: 15px;color: #172B4D;">5</span>
+                </div>
+                <span style="font-size: 8px; color: #0BCDAB;">
+                  Total Assignments
+                </span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between mb-3">
+              <span class="text-sm text-dblue w-50">Experience: </span>
+              <span class="text-sm text-dblue w-50">Market research intern at Eatery
+                March 22 - June 22 (4 Months)
+                <br>
+                <br>
+                Market research intern at Eatery
+                March 22 - June 22 (4 Months)</span>
+            </div>
+            <div class="d-flex justify-content-between mb-3">
+              <span class="text-sm text-dblue w-50">Education: </span>
+              <span class="text-sm text-dblue w-50">BBA Accounting (2020-2023)
+                University of West London</span>
+            </div>
+            <div class="d-flex justify-content-between mb-5">
+              <span class="text-sm text-dblue w-50">Skill assessment:</span>
+              <span class="text-sm text-dblue w-50">English 4/10, MS Word 4/10,
+                Spoken Arabic 7/10</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <button class="jobboxbtn" style="background: #FE4773;">Not interested</button>
+              <button class="jobboxbtn" style="background: #70F05B;">Action</button>
+            </div>
+          </div>
+          <div class="jobbox pt-4 pb-4 px-4">
+            <div class="job-profile d-flex align-items-center gap-3">
+              <div><img src="assets/images/pp.png" alt=""></div>
+              <div class="d-flex flex-column">
+                <p class="text-md m-0" style="color:#172B4D;">Joana Rose</p>
+                <span class="text-sm " style="color:#172B4D;">
+                  Dubai, UAE
+                </span>
+              </div>
+
+            </div>
+            <div class="d-flex justify-content-between mt-3 mb-4">
+              <div class="d-flex flex-column gap-1">
+                <div class="d-flex align-items-center gap-1">
+                  <span class="d-flex"> <img src="assets/images/video.png" alt=""></span> <span
+                    style="font-size: 15px;color: #172B4D;">1 Hr</span>
+                </div>
+                <span style="font-size: 8px; color: #1445E8;">
+                  Video watched
+                </span>
+              </div>
+              <div class="d-flex flex-column gap-1">
+                <div class="d-flex align-items-center gap-1">
+                  <span class="d-flex"> <img src="assets/images/hexa.png" alt=""></span> <span
+                    style="font-size: 15px; color: #172B4D;">245/450</span>
+                </div>
+                <span style="font-size: 8px; color: #FE4773;">
+                  Quiz win Out of played
+                </span>
+              </div>
+              <div class="d-flex flex-column gap-1">
+                <div class="d-flex align-items-center gap-1">
+                  <span class="d-flex"> <img src="assets/images/filee.png" alt=""></span> <span
+                    style="font-size: 15px;color: #172B4D;">5</span>
+                </div>
+                <span style="font-size: 8px; color: #0BCDAB;">
+                  Total Assignments
+                </span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between mb-3">
+              <span class="text-sm text-dblue w-50">Experience: </span>
+              <span class="text-sm text-dblue w-50">Market research intern at Eatery
+                March 22 - June 22 (4 Months)
+                <br>
+                <br>
+                Market research intern at Eatery
+                March 22 - June 22 (4 Months)</span>
+            </div>
+            <div class="d-flex justify-content-between mb-3">
+              <span class="text-sm text-dblue w-50">Education: </span>
+              <span class="text-sm text-dblue w-50">BBA Accounting (2020-2023)
+                University of West London</span>
+            </div>
+            <div class="d-flex justify-content-between mb-5">
+              <span class="text-sm text-dblue w-50">Skill assessment:</span>
+              <span class="text-sm text-dblue w-50">English 4/10, MS Word 4/10,
+                Spoken Arabic 7/10</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <button class="jobboxbtn" style="background: #FE4773;">Not interested</button>
+              <button class="jobboxbtn" style="background: #70F05B;">Action</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</html>
